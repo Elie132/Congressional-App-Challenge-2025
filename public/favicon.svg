@@ -1,0 +1,21 @@
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Clean rounded square background -->
+  <rect x="8" y="8" width="84" height="84" rx="20" fill="url(#cleanGradient)"/>
+  
+  <!-- Letter "S" - modern, bold -->
+  <path d="M35 30 C35 25, 40 20, 50 20 C60 20, 65 25, 65 30 C65 35, 60 37, 50 40 C40 43, 35 45, 35 50 C35 55, 40 60, 50 60 C60 60, 65 55, 65 50" stroke="#065f46" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Small sharing dots -->
+  <circle cx="25" cy="25" r="3" fill="#22c55e" opacity="0.8"/>
+  <circle cx="75" cy="25" r="3" fill="#22c55e" opacity="0.8"/>
+  <circle cx="25" cy="75" r="3" fill="#22c55e" opacity="0.8"/>
+  <circle cx="75" cy="75" r="3" fill="#22c55e" opacity="0.8"/>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="cleanGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f0fdf4"/>
+    </linearGradient>
+  </defs>
+</svg>
