@@ -1,29 +1,114 @@
-# ShelfShare Food Waste Reduction Platform - Congressional App Challenge 2025
-  
-This is a project built with [Chef](https://chef.convex.dev) using [Convex](https://convex.dev) as its backend.
- You can find docs about Chef with useful information like how to deploy to production [here](https://docs.convex.dev/chef).
-  
-This project is connected to the Convex deployment named [`utmost-crow-348`](https://dashboard.convex.dev/d/utmost-crow-348).
-  
-## Project structure
-  
-The frontend code is in the `src` directory and is built with [Vite](https://vitejs.dev/).
-  
-The backend code is in the `convex` directory.
-  
-`npm run dev` will start the frontend and backend servers.
+# ShelfShare - Food Waste Reduction Platform
 
-## App authentication
+**Congressional App Challenge 2025 Submission**
 
-Chef apps use [Convex Auth](https://auth.convex.dev/) with Anonymous auth for easy sign in. You may wish to change this before deploying your app.
+ShelfShare is a web application designed to reduce food waste by connecting food donors (restaurants, grocery stores, individuals) with food receivers (food banks, shelters, community organizations). Our platform makes it easy to share surplus food before it goes to waste.
 
-## Developing and deploying your app
+## 🌟 Features
 
-Check out the [Convex docs](https://docs.convex.dev/) for more information on how to develop with Convex.
-* If you're new to Convex, the [Overview](https://docs.convex.dev/understanding/) is a good place to start
-* Check out the [Hosting and Deployment](https://docs.convex.dev/production/) docs for how to deploy your app
-* Read the [Best Practices](https://docs.convex.dev/understanding/best-practices/) guide for tips on how to improve you app further
+- **Food Listing System**: Donors can easily list available food with photos, quantities, and pickup times
+- **Smart Matching**: Receivers can browse and claim food based on location and category
+- **Multi-Person Claims**: Multiple organizations can claim portions of large food donations
+- **Real-Time Communication**: Built-in messaging system for coordination between donors and receivers
+- **Food Safety Guidelines**: Comprehensive safety information to ensure proper food handling
+- **Role Management**: Users can switch between donor and receiver roles as needed
+- **Location-Based Search**: Find food donations by ZIP code
+- **Category Filtering**: Filter by food type (prepared food, produce, packaged goods, baked goods)
 
-## HTTP API
+## 🚀 Technology Stack
 
-User-defined http routes are defined in the `convex/router.ts` file. We split these routes into a separate file from `convex/http.ts` to allow us to prevent the LLM from modifying the authentication routes.
+- **Frontend**: React with TypeScript, Tailwind CSS
+- **Backend**: Real-time database with TypeScript functions
+- **Authentication**: Secure user authentication with multiple sign-in options
+- **Image Storage**: Local image storage system for food photos
+- **Responsive Design**: Works on desktop and mobile devices
+
+## 📁 Project Structure
+
+```
+├── src/                    # Frontend React application
+│   ├── components/         # React components
+│   │   ├── HomePage.tsx           # Landing page
+│   │   ├── FeedPage.tsx          # Browse available food
+│   │   ├── CreateListingPage.tsx # Create food listings
+│   │   ├── DonorDashboard.tsx    # Donor management interface
+│   │   ├── ReceiverDashboard.tsx # Receiver management interface
+│   │   ├── ProfilePage.tsx       # User profile management
+│   │   ├── SafetyGuidelinesPage.tsx # Food safety information
+│   │   └── ...                   # Additional components
+│   ├── utils/              # Utility functions
+│   └── App.tsx            # Main application component
+├── convex/                # Backend database functions
+│   ├── schema.ts          # Database schema definitions
+│   ├── listings.ts        # Food listing operations
+│   ├── claims.ts          # Claim management
+│   ├── users.ts           # User management
+│   └── ...               # Additional backend functions
+├── public/               # Static assets
+└── package.json         # Project dependencies
+```
+
+## 🛠️ Installation & Setup
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Elie132/Congressional-App-Challenge-2025.git
+   cd Congressional-App-Challenge-2025
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:5173` to view the application
+
+## 🎯 How It Works
+
+### For Food Donors
+1. **Sign Up**: Create an account and set up your donor profile
+2. **List Food**: Add details about available food including photos, quantity, and pickup times
+3. **Manage Requests**: Review and approve pickup requests from receivers
+4. **Coordinate Pickup**: Use the built-in messaging system to coordinate with receivers
+5. **Track Impact**: Monitor your food donations and their impact
+
+### For Food Receivers
+1. **Browse Food**: Search for available food by location and category
+2. **Request Pickup**: Claim food items that match your organization's needs
+3. **Specify Quantity**: Request partial quantities for large donations
+4. **Coordinate**: Communicate with donors to arrange pickup details
+5. **Follow Safety Guidelines**: Access food safety information to ensure proper handling
+
+## 🔒 Safety & Security
+
+- User authentication and secure data handling
+- Comprehensive food safety guidelines
+- Reporting system for inappropriate content
+- Privacy protection for all users
+
+## 🌍 Impact
+
+ShelfShare addresses the critical issue of food waste while helping feed communities in need. By making food sharing simple and efficient, we're working to:
+
+- Reduce the 80 billion pounds of food wasted annually in the US
+- Connect surplus food with organizations that need it most
+- Build stronger, more sustainable communities
+- Promote environmental responsibility
+
+## 📱 Screenshots
+
+The application features a clean, intuitive interface designed for ease of use across all devices. Key screens include the food browsing interface, listing creation form, and dashboard management systems.
+
+## 🤝 Contributing
+
+This project was created for the Congressional App Challenge 2025. For questions or feedback, please open an issue in this repository.
+
+## 📄 License
+
+This project is open source and available under the MIT License.

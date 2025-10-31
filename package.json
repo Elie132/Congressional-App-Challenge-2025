@@ -1,8 +1,14 @@
 {
-  "name": "flex-template",
-  "private": true,
-  "version": "0.0.0",
+  "name": "shelfshare-food-waste-platform",
+  "description": "A web application to reduce food waste by connecting food donors with receivers - Congressional App Challenge 2025",
+  "version": "1.0.0",
   "type": "module",
+  "author": "Elie Ciril",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Elie132/Congressional-App-Challenge-2025.git"
+  },
+  "keywords": ["food-waste", "sustainability", "community", "react", "typescript", "congressional-app-challenge"],
   "scripts": {
     "dev": "npm-run-all --parallel dev:frontend dev:backend",
     "dev:frontend": "vite --open",
