@@ -20,7 +20,7 @@ This is a local web prototype built for the Congressional App Challenge 2025. Th
 - Anonymous authentication for development testing
 
 ## Planned Improvements (v2.0)
-
+ 
 - Public deployment and hosting infrastructure
 - Enhanced user authentication and account management
 - Push notifications for new listings and claim updates
