@@ -1,4 +1,4 @@
-# ShelfShare Food Waste Reduction Platform
+# ShelfShare Food Waste Reduction Platform - Congressional App Challenge 2025
   
 This is a project built with [Chef](https://chef.convex.dev) using [Convex](https://convex.dev) as its backend.
  You can find docs about Chef with useful information like how to deploy to production [here](https://docs.convex.dev/chef).
@@ -7,7 +7,7 @@ This project is connected to the Convex deployment named [`utmost-crow-348`](htt
   
 ## Project structure
   
-The frontend code is in the `app` directory and is built with [Vite](https://vitejs.dev/).
+The frontend code is in the `src` directory and is built with [Vite](https://vitejs.dev/).
   
 The backend code is in the `convex` directory.
   
